@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formularze</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="#" method="get">
+        <label for="elemName"
+          >Nazwa elementu:
+          <select name="elemName" id="elemName">
+            <option label="p"></option>
+            <option label="div"></option>
+            <option label="h1"></option>
+            <option label="h2"></option>
+          </select>
+        </label>
+        <br />
+
+        <label for="elemText"
+          >Tekst w elemencie:
+          <input
+            type="text"
+            name="elemText"
+            id="elemText"
+            placeholder="wpisz tekst"
+          />
+        </label>
+        <br />
+
+        <label for="elemPadding"
+          >Pading w elemencie:
+          <input
+            type="range"
+            name="elemPadding"
+            id="elemPadding"
+            min="0"
+            max="1"
+            step="0.2"
+          />
+        </label>
+        <br />
+        <label for="elemMargin"
+          >Margines Elementu:
+          <input
+            type="range"
+            name="elemMargin"
+            id="elemMargin"
+            min="0"
+            max="1"
+            step="0.2"
+          />
+        </label>
+        <br />
+        <label for="elemSpace"
+          >Odległość między literami:
+          <input type="number" name="elemSpace" id="elemSpace" />
+        </label>
+        <br />
+        <label for="elemColor"
+          >Kolor czcionki:
+          <input type="color" name="elemColor" id="elemColor" />
+        </label>
+        <br />
+        <label for="elemBcColor"
+          >Kolor tła elementu:
+          <input
+            type="color"
+            name="elemBcColor"
+            id="elemBcColor"
+            value="#0000AA"
+          />
+        </label>
+        <br />
+        <fieldset>
+          <legend>Wyrównanie tekstu</legend>
+          <label for="Left"
+            >Lewa<input type="radio" name="textAllign" id="lewa" />
+          </label>
+          <label for="srodek"
+            >Środek<input type="radio" name="textAllign" id="srodek" />
+          </label>
+          <label for="Prawa"
+            >Prawa<input type="radio" name="textAllign" id="prawa" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Dekoracja tekstu</legend>
+          <label for="pod"
+            >Podkreslenie<input type="checkbox" name="pod" id="pod" />
+          </label>
+          <label for="srodek"
+            >Przekreślenie<input type="checkbox" name="prze" id="prze" />
+          </label>
+          <label for="nad"
+            >nadkreślenie<input type="checkbox" name="nad" id="nad" />
+          </label>
+        </fieldset>
+        <button>Wyślij</button>
+      </form>
+    </div>
+  </body>
+</html>
